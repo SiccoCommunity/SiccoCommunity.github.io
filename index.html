@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Sicco Community Admin panel</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Sicco <span>Community</span></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Admin Panel</a></li>
+        <li><a href="#">Log</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Giveaways</a></li>
+        <li><a href="#">Leaderboard</a></li>
+        <li><a href="#">Announcement</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <h1>Admin Registration</h1>
+        <img src="img/Sicco_Community_TRANSpng.png" alt="Sicco Logo">
+        <form action="connect.php" method="post">
+          <div class="form-group">
+            <input type="text" placeholder="First Name " class="form-control" id="firstName" name="firstName"
+              required />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last Name" class="form-control" id="lastName" name="lastName" required />
+          </div>
+
+          <!--
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <div>
+              <label for="male" class="radio-inline"><input type="radio" name="gender" value="m"
+                  id="male" />Male</label>
+              <label for="female" class="radio-inline"><input type="radio" name="gender" value="f"
+                  id="female" />Female</label>
+              <label for="others" class="radio-inline"><input type="radio" name="gender" value="o"
+                  id="others" />Others</label>
+            </div>
+          </div> 
+          -->
+
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Activation Code" class="form-control" id="activation" name="activation"
+              required />
+          </div>
+
+          <!--
+          <div class="form-group">
+            <input type="number" placeholder="Phone Number" class="form-control" id="number" name="number" required />
+          </div>
+          -->
+
+          <input type="submit" class="btn btn-primary" />
+          <div class="panel-footer text-right">
+            <small>&copy; Sicco Community</small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem, excepturi quasi fuga molestias sequi accusamus nemo facere aspernatur saepe officiis doloribus error alias eum commodi? Eligendi eveniet autem nobis.</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>46+ 762 315 002</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>siccocommunity@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Links</div>
+        <div><a href="#">Gaming</a></div>
+        <div><a href="#">Leaderboard</a></div>
+        <div><a href="#">Giveaways</a></div>
+        <div><a href="#">Reports</a></div>
+        <div><a href="#">blog</a></div>
+        <div><a href="#">Service</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2022 <a href="#">Sicco Community</a> All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+
+</html>
